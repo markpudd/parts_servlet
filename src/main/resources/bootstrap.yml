@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: parts-service
+  data:
+    mongodb:
+      uri: ${vcap.services.mongodb2.credentials.uri}
+security:
+  basic:
+    enabled: false
+server:
+    port: 9000
+
